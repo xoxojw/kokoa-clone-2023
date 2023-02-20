@@ -1,6 +1,6 @@
 # Kokoa Clone (2023. 2)
 
-###### Nomad Coders - Nicolas
+- [Nomad Coders](https://nomadcoders.co/) - Nicolas <br>
 
 코코아톡 메신저를 웹사이트로 따라 만들어보는 프론트엔드 기초 강의
 
