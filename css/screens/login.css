@@ -1,0 +1,99 @@
+.welcome-header {
+    margin: 10vh 0vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 350;
+}
+
+.welcome-header__title {
+    margin-bottom: 5vh;
+    font-size: 2em;
+}
+
+.welcome-header__text {
+    width: 60%;
+    opacity: 0.4;
+    line-height: 120%;
+}
+
+#login-form {    
+    display: flex;
+    flex-direction: column;
+    margin: 0vh 5vh;
+}
+
+#login-form input {
+    border: none;
+    padding: 2vh 0vh;
+    font-size: 1.1em;
+}
+
+#login-form input:not([type="submit"]) {
+    border-color: none;
+    border-bottom: 1.5px solid rgba(0,0,0,0.2);
+    transition: border-color 0.5s ease-in-out;
+    margin-bottom: 2vh;
+}
+
+/* 가상 클래스 선택자 - pseudo element*/
+#login-form input::placeholder {
+    color: rgba(0,0,0,0.2);
+}
+
+#login-form input:focus::placeholder {
+    transition: color 0.5s ease-in-out;
+    color: transparent;
+}
+
+#login-form input:focus {
+    border-color: var(--yellow);
+}
+
+#login-form input[type="submit"] {
+    cursor: pointer;
+    padding: 20px 0px;
+    border-radius: 5px;
+    margin-top: 3vh;
+    background-color: rgba(0,0,0,0.05);
+    transition: background-color 1s;
+}
+
+#login-form input:hover[type="submit"] {
+    background-color: var(--yellow);
+}
+
+#signup-form {    
+    display: flex;
+    flex-direction: column;
+    margin: 0vh 5vh;
+}
+
+#signup-form input {
+    border: none;
+    padding: 2vh 0vh;
+    font-size: 1.1em;
+    margin-top: 1vh
+}
+
+#signup-form input[type="submit"] {
+    cursor: pointer;
+    padding: 20px 0px;
+    border-radius: 5px;
+    transition: background-color 1s;
+}
+
+#signup-form input:hover[type="submit"] {
+    background-color: var(--yellow);
+}
+
+a {
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.9em;
+}
